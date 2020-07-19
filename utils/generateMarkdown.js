@@ -52,7 +52,7 @@ ${data.license}
 ${data.test}
 
 ## Questions
-For any additional questions, here is my contact informaton. 
+For any additional questions, here is my contact information. 
 * [GitHub] (github.com/${data.username})
 * [Email] (${data.email})
 `;

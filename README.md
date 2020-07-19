@@ -7,7 +7,7 @@ https://drive.google.com/file/d/1gf_eD6HV2cIeuIBXNQCXTxh_sarPo0nY/view
 https://github.com/asaldana1108/readme-generator/
 
 ## Description 
-This app generates a professional README file by prompting user input. Javascript and Node were used in creating this app. 
+This app generates a professional README file by prompting user input. JavaScript and Node were used in creating this app. 
 
 ## Badges
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -35,6 +35,6 @@ MIT
 None
 
 ## Questions
-For any additional questions, here is my contact informaton. 
+For any additional questions, here is my contact information. 
 * [GitHub] (github.com/asaldana1108)
 * [Email] (asaldana1108@gmail.com)

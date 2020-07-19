@@ -36,7 +36,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license should your project have?',
-        choices: ['MIT', 'Apache 2.0', 'GNU GPL', 'GNU LGPL', 'Mozilla Public License 2.0']
+        choices: ['MIT', 'Apache 2.0', 'GNU GPLv3', 'GNU LGPLv3', 'GNU AGPLv3', 'Mozilla Public License 2.0', 'Boost Software', 'Unlicense']
     },
     {
         type: 'input',
@@ -62,7 +62,13 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
+    
+    fs.writeFile('./dist/README.md', data, err => {
+        if (err) throw err;
+
+        console.log('Generating README file...');
+    });
 }
 
 // function to initialize program
@@ -71,4 +77,10 @@ function init() {
 }
 
 // function call to initialize program
-init();
+init()
+    .then(userInput => {
+        return generateReadMe(userInput);
+    })
+    .then(markdownData => {
+        return writeToFile(markdownData);
+    }); 
